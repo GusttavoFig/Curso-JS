@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // Recebendo as notas
+        let nota1 = prompt("Qual o valor da nota 1?");
+        let nota2 = prompt("Qual o valor da nota 2?");
+        let nota3 = prompt("Qual o valor da nota 3?");
+        let nota4 = prompt("Qual o valor da nota 4?");
+
+        // Cálculo da média
+        let media = (parseFloat(nota1) +  parseFloat(nota2) +  parseFloat(nota3) +  parseFloat(nota4)) / 4;
+
+        // Exibição dos resultados
+        console.log(nota1);
+        console.log(nota2);
+        console.log(nota3);
+        console.log(nota4);
+
+        document.write("Nota 1: " + nota1 + "<br>");
+        document.write("Nota 2: " + nota2 + "<br>");
+        document.write("Nota 3: " + nota3 + "<br>");
+        document.write("Nota 4: " + nota4 + "<br><br>");
+
+
+        console.log(media);
+        document.write("Media: " + media.toFixed(2));
+        
+    </script>
+</body>
+</html>

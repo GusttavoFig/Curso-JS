@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Coletando as informações
+        const nome = prompt("Qual é o seu nome?");
+        const idade = prompt("Qual é a sua idade?");
+        const email = prompt("Qual é o seu e-mail?");
+        const telefone = prompt("Qual é o seu telefone?");
+
+        // Exibição dos resultados
+        document.write (nome + "<br>");
+        document.write (idade + "<br>");
+        document.write (email + "<br>");
+        document.write (telefone);
+
+        // Armazenando em um objeto
+        let objeto = {
+            nome: nome,
+            idade: idade,
+            email: email,
+            telefone: telefone,
+        }
+
+        // Exibindo valores do objeto
+        console.log(objeto);
+    
+    </script>
+</body>
+</html>

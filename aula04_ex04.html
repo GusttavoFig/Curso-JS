@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // Valor da conta
+        let conta = prompt("Qual o valor da conta?");
+
+        // Quantidade de pessoas
+        let clientes = prompt("Quantas pessoas pagarão a conta?");
+
+        // Cálculo do valor por pessoa
+        let valorDividido = parseFloat(conta) / parseFloat(clientes);
+
+        // Exibição de resultados
+        console.log("Valor da conta: R$" + conta);
+        console.log("Número de clientes: " + clientes);
+        console.log("Valor por pessoa: R$" + valorDividido.toFixed(2));
+        
+        document.write("Valor da conta: R$" + conta + "<br>");30
+        document.write("Número de clientes: " + clientes + "<br>");
+        document.write("Valor por pessoa: R$" + valorDividido.toFixed(2));
+    </script>
+    
+</body>
+</html>

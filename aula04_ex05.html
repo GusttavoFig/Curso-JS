@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Valor do produto
+        let produto = prompt("Qual o valor do produto?");
+
+        // Valor à vista
+        let vista = parseFloat(produto) * 0.9;
+
+        // Valores parcelados
+        let parcela2 = parseFloat(produto) / 2;
+        let parcela3 = parseFloat(produto) / 3;
+
+        // Exibição dos resultados
+        console.log("Valor do produto: " + produto);
+        console.log("Opções de pagamento:");
+        console.log("À vista: " + vista);
+        console.log("Parcelado: 2x de " + produto / 2 + " ou 3x de " + produto / 3);
+
+        document.write("Valor do produto: " + produto + "<br>");
+        document.write("Opções de pagamento:" + "<br>");
+        document.write("À vista: " + vista + "<br>");
+        document.write("Parcelado: 2x de " + parcela2.toFixed(2) + " ou 3x de " + parcela3.toFixed(2));
+
+    </script>
+</body>
+</html>
