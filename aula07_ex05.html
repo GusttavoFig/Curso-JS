@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada de Multiplicação</title>
+
+<!-- INÍCIO DO CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .input-area {
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-right: 10px;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        input[type="base"] {
+            width: 50px;
+            padding: 5px;
+            font-size: 1.1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 8px 12px;
+            font-size: 1em;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .resultado {
+            margin-top: 20px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+    </style>
+<!-- FIM DO CSS -->
+
+</head>
+<body>
+    <div id="container" class="container">
+        <h1>Calculadora de Tabuada</h1>
+        <label for="numero">Digite um número:</label>
+        <input type="number" id="numero" required>
+        <button onclick="calcularTabuada()">Calcular Tabuada</button>
+    
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        function calcularTabuada() {
+            const numero = document.getElementById("numero").value;
+            let resultado = `<h2>Tabuada do ${numero}:</h2>`;
+            for (let i = 1; i <= 10; i++) {
+                resultado += `${numero} x ${i} = ${numero * i}<br>`;
+            }
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+        
+    </script>
+</body>
+</html>

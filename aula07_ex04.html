@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="media">Media: </h1>
+    
+    <script>
+        function verificarNumero(numero) {
+            if (isNAN(numero) || numero == 0) {
+                return false;
+            } else {
+                return numero;
+            }
+        }
+            let numero;
+            let contador = 0;
+            let soma = 0;
+
+            do {
+                numero = parseFloat(prompt("Digite números para calcular a média ou digite 0 para encerrar"));
+                if(isNAN(numero)){
+                    alert("Número inválida!");
+                    // Break: sai do laço
+                    // break;
+                    // Continue: pula para a próxima iteração
+                    // continue:
+                }
+                if (numero !== 0){
+                    soma += numero;
+                    contador ++;
+                }
+            } while (numero !== 0);
+
+            let media = soma / contador;
+            document.getElementById("media").innerHTML = "Média: " + media;
+        
+    </script>
+</body>
+</html>
